@@ -16,6 +16,21 @@ class App extends Component {
     }
   }
 
+  onColorSelect = (index) => {
+    const newColorList = this.state.colors.map((ele, id) => {
+      if(id === index) {
+        ele.selected = !ele.selected
+      }
+      return ele
+    })
+    this.setState({color: newColorList})
+  }
+
+  onAddColor = (name, hexVal) => {
+    const newColor = {value: hexVal, name: name, selected: false}
+    this.setState({colors: [...this.state.colors, newColor]})
+  }
+
   render() {
     return (
       <main>
@@ -29,7 +44,7 @@ class App extends Component {
           <div className="row">
             <div className="col-3">
               <h2 className="h4 text-center mb-4">Colors</h2>
-              <ColorList colors={ this.state.colors } />
+              <ColorList colors={ this.state.colors } onSelectToggle={ this.onColorSelect }/>
             </div>
             <div className="col">
               <h2 className="h4 text-center mb-4">Mix Result</h2>
@@ -37,7 +52,7 @@ class App extends Component {
             </div>
             <div className="col-3">
               <h2 className="h4 text-center mb-4">Add a Color</h2>
-              <ColorForm />
+              <ColorForm addColor = { this.onAddColor } />
             </div>
           </div>
         </div>

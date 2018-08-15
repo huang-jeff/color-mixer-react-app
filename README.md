@@ -30,14 +30,14 @@ To complete the application, we will want to make it so that a user can click on
 
 Complete the following:
 
-- [ ] When a user clicks on one of the colors it will cause that color to be selected and thereby mix it with the other colors.
+- [x] When a user clicks on one of the colors it will cause that color to be selected and thereby mix it with the other colors.
 
-- [ ] When a user clicks on one of the colors that is already a part of the mix, it will remove it from the mix.
+- [x] When a user clicks on one of the colors that is already a part of the mix, it will remove it from the mix.
 
-- [ ] When a user submits a new color, it will be added to the color list on the left side of the screen.
+- [x] When a user submits a new color, it will be added to the color list on the left side of the screen.
 
-- [ ] When a user submits a new color, it will clear out the form upon successful submission.
+- [x] When a user submits a new color, it will clear out the form upon successful submission.
 
-- [ ] BONUS: If the user submits a new color with a name that is less than three characters, the form will not submit.
+- [x] BONUS: If the user submits a new color with a name that is less than three characters, the form will not submit.
 
-- [ ] BONUS: As the user types in the name, it will show an error state until more than three characters have been typed.
+- [x] BONUS: As the user types in the name, it will show an error state until more than three characters have been typed.
